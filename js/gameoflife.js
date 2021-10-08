@@ -70,6 +70,7 @@ const calculateNext = (state) => {
       result=result.concat(willBeAlive([x,y],state)?[[x,y]]:[]);
     }
   }
+  return result;
  };
 
 const iterate = (state, iterations) => {
