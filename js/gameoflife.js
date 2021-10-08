@@ -38,12 +38,15 @@ const printCells = (state) => {
     for (let x = bottomLeft[0];x<=topRight[0];x++){
       row.push(printCell([x,y], state));
     }
-    accumulator += row.join(" ") + "\n"
+    accumulator += row.join(" ") + "\n";
   }
-  return accumulator
+  return accumulator;
 };
 
-const getNeighborsOf = ([x, y]) => {};
+const getNeighborsOf = ([x, y]) => {
+  [x-1,y+1],[x,y+1],[x+1,y+1],
+  
+};
 
 const getLivingNeighbors = (cell, state) => {};
 
