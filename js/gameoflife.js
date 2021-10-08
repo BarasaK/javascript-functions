@@ -54,7 +54,7 @@ const getLivingNeighbors = (cell, state) => {
 };
 
 const willBeAlive = (cell, state) => {
-  const getLivingNeighbors = this.getLivingNeighbors(cell,state);
+  const livingNeighbors = getLivingNeighbors(cell,state);
 
   return (
     livingNeighbors.length ===3 ||
